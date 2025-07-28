@@ -1,6 +1,9 @@
 name: Cypress E2E Tests
-# on: [push]
+# on:
 on:
+    push:
+      branches:
+        - main
     workflow_dispatch:
 jobs:
   tests:
